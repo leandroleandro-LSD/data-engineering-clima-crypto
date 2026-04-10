@@ -54,3 +54,11 @@ Dashboard ao vivo
 | **Total** | **~R$ 0/mês** |
 
 ## 📁 Estrutura do Projeto
+├── ingestion/
+│   ├── main.py              # Cloud Run - coleta dados das APIs
+│   └── requirements.txt
+├── notebooks/
+│   ├── 01_bronze.py         # Ingestão incremental GCS → Delta
+│   ├── 02_silver.py         # Limpeza e enriquecimento
+│   └── 03_gold.py           # KPIs e análises
+└── README.md
